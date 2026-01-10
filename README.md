@@ -249,7 +249,7 @@ Knowledge content here...
 
 ## Credits
 
-Inspired by [claude-workflow-v2](https://github.com/anthropics/claude-workflow-v2) patterns. Built for [OpenCode CLI](https://opencode.ai).
+Inspired by [claude-workflow-v2](https://github.com/CloudAI-X/claude-workflow-v2) patterns. Built for [OpenCode CLI](https://opencode.ai).
 
 Created by [@cloudxdev](https://x.com/cloudxdev)
 
