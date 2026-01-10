@@ -1,19 +1,15 @@
 # OpenCode Workflow
 
-**Stop wrestling with AI assistants. Start collaborating with a development team.**
-
-You know the drill: ask an AI to review your code, wait, then ask it to check security, wait again, then ask about tests. Three questions, three context switches, ten minutes of your life you won't get back.
-
-This workflow flips that script. Ask once. Multiple specialists analyze your code in parallel. You get a synthesized report while you're still sipping your coffee.
+A universal OpenCode workflow setup with specialized agents, skills, commands, and plugins for any software project.
 
 ## What You Get
 
-| Component | Count | What It Does |
-|-----------|-------|--------------|
-| **Agents** | 7 | Orchestrator + 6 specialists (security, tests, docs...) |
-| **Commands** | 12 | /review, /commit, /architect, /rapid, /debug... |
-| **Skills** | 7 | Domain knowledge for APIs, testing, architecture... |
-| **Plugins** | 5 | Auto-format, security scans, notifications... |
+| Component    | Count | What It Does                                            |
+| ------------ | ----- | ------------------------------------------------------- |
+| **Agents**   | 7     | Orchestrator + 6 specialists (security, tests, docs...) |
+| **Commands** | 12    | /review, /commit, /architect, /rapid, /debug...         |
+| **Skills**   | 7     | Domain knowledge for APIs, testing, architecture...     |
+| **Plugins**  | 5     | Auto-format, security scans, notifications...           |
 
 ## Quick Look
 
@@ -59,12 +55,12 @@ cp -r opencode-workflow/commands your-project/.opencode/command
 
 ### Folder Mapping
 
-| This Repository | Your Project |
-|-----------------|--------------|
-| `agents/` | `.opencode/agent/` |
-| `commands/` | `.opencode/command/` |
-| `skills/` | `.opencode/skill/` |
-| `plugins/` | `.opencode/plugin/` |
+| This Repository | Your Project         |
+| --------------- | -------------------- |
+| `agents/`       | `.opencode/agent/`   |
+| `commands/`     | `.opencode/command/` |
+| `skills/`       | `.opencode/skill/`   |
+| `plugins/`      | `.opencode/plugin/`  |
 
 ### Verify It Works
 
@@ -84,10 +80,10 @@ opencode
 
 Press **Tab** to cycle between primary agents:
 
-| Agent | What It Does |
-|-------|--------------|
-| **build** | Default. Full development work. |
-| **plan** | Analysis only, no file changes. |
+| Agent            | What It Does                          |
+| ---------------- | ------------------------------------- |
+| **build**        | Default. Full development work.       |
+| **plan**         | Analysis only, no file changes.       |
 | **orchestrator** | Coordinates complex multi-step tasks. |
 
 ### Subagents (@mention)
@@ -102,33 +98,33 @@ Invoke specialists by mentioning them:
 @code-reviewer Review the changes I just made
 ```
 
-| Subagent | Focus | Has Bash? | Can Edit? |
-|----------|-------|-----------|-----------|
-| `@code-reviewer` | Quality, patterns, maintainability | No | No |
-| `@debugger` | Bug investigation, root cause | Yes | No |
-| `@security-auditor` | OWASP Top 10, vulnerabilities | No | No |
-| `@refactorer` | Clean code, design patterns | No | Yes |
-| `@test-architect` | Test strategy, coverage | No | Yes |
-| `@docs-writer` | README, API docs, guides | No | Yes |
+| Subagent            | Focus                              | Has Bash? | Can Edit? |
+| ------------------- | ---------------------------------- | --------- | --------- |
+| `@code-reviewer`    | Quality, patterns, maintainability | No        | No        |
+| `@debugger`         | Bug investigation, root cause      | Yes       | No        |
+| `@security-auditor` | OWASP Top 10, vulnerabilities      | No        | No        |
+| `@refactorer`       | Clean code, design patterns        | No        | Yes       |
+| `@test-architect`   | Test strategy, coverage            | No        | Yes       |
+| `@docs-writer`      | README, API docs, guides           | No        | Yes       |
 
 ### Commands (/ to invoke)
 
 Quick workflows for common tasks:
 
-| Command | What It Does |
-|---------|--------------|
-| `/review` | Multi-perspective code review |
-| `/commit` | Generate conventional commit message |
-| `/architect` | High-level design session |
-| `/rapid` | Fast iteration, minimal ceremony |
-| `/debug` | Systematic bug investigation |
-| `/refactor` | Code cleanup workflow |
-| `/security-audit` | OWASP vulnerability check |
-| `/test-design` | Plan test coverage |
-| `/docs` | Generate documentation |
-| `/parallel` | Run multiple tasks at once |
-| `/verify-changes` | Lint → Type → Build → Test → Review |
-| `/mentor` | Educational explanations |
+| Command           | What It Does                         |
+| ----------------- | ------------------------------------ |
+| `/review`         | Multi-perspective code review        |
+| `/commit`         | Generate conventional commit message |
+| `/architect`      | High-level design session            |
+| `/rapid`          | Fast iteration, minimal ceremony     |
+| `/debug`          | Systematic bug investigation         |
+| `/refactor`       | Code cleanup workflow                |
+| `/security-audit` | OWASP vulnerability check            |
+| `/test-design`    | Plan test coverage                   |
+| `/docs`           | Generate documentation               |
+| `/parallel`       | Run multiple tasks at once           |
+| `/verify-changes` | Lint → Type → Build → Test → Review  |
+| `/mentor`         | Educational explanations             |
 
 ---
 
@@ -229,19 +225,23 @@ Knowledge content here...
 ## Troubleshooting
 
 **Agents not appearing after Tab?**
+
 - Check that `.opencode/agent/` exists (singular `agent`, not `agents`)
 - Verify markdown files have proper YAML frontmatter with `---` delimiters
 
 **Commands not showing with /?**
+
 - Commands go in `.opencode/command/` (singular)
 - File name becomes the command name (`commit.md` → `/commit`)
 
 **Plugins causing errors?**
+
 - Check for TypeScript syntax errors
 - Plugins must export an async function returning a hooks object
 - Use optional chaining (`?.`) when accessing potentially undefined properties
 
 **Skills not loading?**
+
 - Each skill needs its own folder with `SKILL.md` inside
 - The `name` field in frontmatter should match the folder name
 
