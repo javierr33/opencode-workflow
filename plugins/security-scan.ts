@@ -27,7 +27,7 @@ export const SecurityScanPlugin = async ({ $ }) => {
         return
       }
 
-      const filePath = output.args?.file_path || output.args?.filePath || output.args?.path || ""
+      const filePath = input.args?.file_path || input.args?.filePath || input.args?.path || ""
 
       if (filePath && isSensitiveFile(filePath)) {
         throw new Error(
