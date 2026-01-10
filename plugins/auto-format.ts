@@ -29,7 +29,8 @@ export const AutoFormatPlugin = async ({ $ }) => {
 
       if (formatter) {
         try {
-          await $`sh -c '${formatter} "${filePath}"'`.quiet()
+          const [cmd, ...args] = formatter.split(" ")
+          await $`${cmd} ${args} ${filePath}`.quiet()
         } catch {
           // Ignore formatter errors - non-blocking
         }
